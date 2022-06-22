@@ -74,7 +74,13 @@ main {
 .enter-btn:hover {
  opacity: 1;
 }
-
+@media (max-width: 768px) {
+  .main-img {
+    width: 130%;
+  }
+  .enter-btn {
+    font-size: 6rem;
+  }}
 @keyframes pulse-black {
   0% {
     transform: scale(0.95);
