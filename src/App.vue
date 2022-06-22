@@ -52,12 +52,12 @@ main {
   cursor: pointer;
 }
 .enter-btn {
-  width: 100px;
+  width: 13%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.9;
+  opacity: 0.7;
   cursor: pointer;
   font-size: 10rem;
   font-weight: bold;
@@ -67,10 +67,14 @@ main {
   text-shadow: rgb(0, 0, 0) 10px 10px 15px,rgb(0, 255, 140) 10px 10px 25px;
   border-radius: 5%;
   font-family: 'sarah script', cursive;
-  width: 200px;
   transform: scale(1);
   animation: pulse-black 2s infinite;
+  transition: all 0.5s ease-in-out;
 }
+.enter-btn:hover {
+ opacity: 1;
+}
+
 @keyframes pulse-black {
   0% {
     transform: scale(0.95);
