@@ -13,7 +13,7 @@ const show = ref(true);
     <Transition name="slide-fade">
       <img v-if="show" src="./assets/011.jpeg" class="main-img" alt="logo" />
     </Transition>
-   <button class="enter-btn" @click="show = !show">Enter</button>
+   <button v-if="show" class="enter-btn" @click="show = !show">Enter</button>
   </main>
 </template>
 
