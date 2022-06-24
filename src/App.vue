@@ -13,6 +13,10 @@ const show3 = ref(false);
 
   </nav>
   <main>
+    <Transition name="slide-fade2">
+      <div class="black-bg" v-if="show3">
+      </div>
+      </Transition>
     <Transition name="slide-fade">
       <img v-if="show" src="./assets/jjp2.png" class="main-img" alt="logo" />
     </Transition>
@@ -73,6 +77,12 @@ main {
   top: 3%;
   opacity: 0.9;
 }
+.black-bg {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
 .brand {
   position: absolute;
   width: 100px;
@@ -89,6 +99,7 @@ main {
   left: 93%;
   top: 3%;
   opacity: 0.9;
+  z-index: 4;
   border-radius: 30%;
   cursor: pointer;
 }
